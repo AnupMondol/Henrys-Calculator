@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Henrys Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="calculate"><h3>Henry's  Calculator</h3></div>
+
+        <input type="text" id="inputtext" placeholder="0">
+
+        <div class="calculator">
+            <div onclick="calculate('1')" class="numbers">1</div>
+            <div onclick="calculate('2')" class="numbers">2</div>
+            <div onclick="calculate('3')" class="numbers">3</div>
+            <div onclick="clr()" class="cancel">C</div>
+            <div onclick="calculate('4')" class="numbers">4</div>
+            <div onclick="calculate('5')" class="numbers">5</div>
+            <div onclick="calculate('6')" class="numbers">6</div>
+            <div onclick="calculate('+')" class="cal">+</div>
+            <div onclick="calculate('7')" class="numbers">7</div>
+            <div onclick="calculate('8')" class="numbers">8</div>
+            <div onclick="calculate('9')" class="numbers">9</div>
+            <div onclick="calculate('-')" class="cal">-</div>
+            <div onclick="calculate('0')" class="numbers">0</div>
+            <div onclick="Result('=')" class="cal">=</div>
+            <div onclick="calculate('/')" class="cal">/</div>
+            <div onclick="calculate('*')" class="cal">X</div>
+        </div>
+    </div>
+
+    <!-- java Script -->
+
+    <script>
+        let result = document.getElementById("inputtext");
+
+        let calculate =(number)=>{
+            result.value += number;
+        }
+
+        let Result=()=>{
+            try{
+                result.value=eval(result.value)
+            }
+            catch(err){
+                alert("Enter The Valid Result");
+            }
+        }
+
+        function clr(){
+            result.value = " ";
+        }
+        
+    </script>
+    
+</body>
+</html>

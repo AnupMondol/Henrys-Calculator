@@ -1,0 +1,80 @@
+.container{
+    height: 445px;
+    width: 300px;
+    border-radius: 10px;
+    background-color: bisque;
+    align-items: center;
+    padding: 5px;
+}
+
+.calculator{
+    height: 300px;
+    width: 300px;
+    text-align: center;
+    border-radius: 10px;
+    
+    
+    background-color: aquamarine;
+    display: grid;
+    
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+#inputtext{
+    background-color:rgb(243, 78, 78);
+    height:30px;
+    width: 280px;
+    border-radius: 5px;
+    color: white;
+    text-align: end;
+    padding-top: 15px;
+    padding-right: 10px;
+    font-family: cursive;
+    margin-bottom: 20px;
+}
+.numbers{
+    font-family: cursive;
+    height: 35px;
+    width: 50px;
+    margin: auto;
+    background-color: rgb(255, 119, 119);
+    padding-top: 13px;
+}
+.cal{
+    font-family: cursive;
+    height: 35px;
+    width: 50px;
+    margin: auto;
+    background-color: rgb(4, 99, 47);
+    color: white;
+    padding-top: 13px;
+}
+.cancel{
+    font-family: cursive;
+    height: 35px;
+    width: 50px;
+    margin: auto;
+    background-color: rgb(245, 5, 5);
+    padding-top: 13px;
+}
+.numbers:hover{
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}
+.cal:hover{
+    background-color: rgb(206, 65, 65);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+.cancel:hover{
+    background-color: rgb(43, 2, 2);
+    color: white;
+    cursor: pointer;
+}
+h3{
+    font-family: cursive;
+    text-align: end;
+    padding-top: 10px;
+    padding-right: 10px;
+}
